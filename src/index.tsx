@@ -1,5 +1,4 @@
-import Game from "./game/Game";
-import Clock from "./Clock";
 import TreeView from "./treeview/TreeView";
+import Clock from "./Clock";
 
-export default {TreeView};
+export default {TreeView,Clock};

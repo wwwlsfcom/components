@@ -1,9 +1,8 @@
-
 const path = require("path");
 
 module.exports = {
     entry: "./src/index.tsx",
-    mode: "production",
+    mode: "development",
     module: {
         rules: [
             {
@@ -40,8 +39,9 @@ module.exports = {
         extensions: ['.js', '.jsx', '.tsx'],
     },
     output: {
-        path: path.resolve(__dirname, 'lib'),
-        filename: "bundle.js",
-        clean: true
+        library: {
+            type: 'umd',
+            export: "default"
+        }
     },
 };

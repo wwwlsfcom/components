@@ -27,6 +27,10 @@ export default  class Clock extends React.Component<any, any> {
         });
     }
 
+    componentDidCatch(error, errorInfo) {
+        console.log('Clock : ==============',error,errorInfo);
+    }
+
     render() {
         return (
             <div>
